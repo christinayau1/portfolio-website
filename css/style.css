@@ -1,0 +1,108 @@
+/*
+Colors used:
+Primary Color (lightpink):#ffe5ea;
+Secondary Color (lightgrey):#bfbfbf;
+*/
+body{
+  background-color:#ffe5ea;/*lightpink*/
+  font-family:'Spartan', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6
+  color: #bfbfbf;/*lightgrey*/
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1{
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3{
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4{
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+/*typography*/
+.makeUppercase {
+  text-tranform: uppercase;
+}
+
+.makeLowercase {
+  text-tranform: lowercase;
+}
+
+.underlineMe {
+  text-tranform: underline;
+}
+
+img{
+  width: 100%
+}
+
+a {
+  color: #ff7f50;
+  text-decoration: none; /* No underlining */
+}
+a:visited { /* visited link */
+  color: #ff7f50;
+}
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+a:active { /* selected link */
+  color: #994c30;
+}
+
+.button {
+  display: inline-block;
+  background-color: #bfbfbf;
+  color: #ffffff;/* need to override default link color*/
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid ##bfbfbf;/*width of the border, type, color */
+  transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8;/* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+.button:active {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button.connect{
+  display: inline-block
+  background-color: transparent;
+  color: #ffffff;
+  font-weight: 400;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 2px solid #bfbfbf;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+}
+.button.connect:hover {
+  background-color: #bfbfbf
+  color: #ffffff;
+}
+.button.connect:active {
+  background-color: #bfbfbf
+  color: #ffffff;
+}
