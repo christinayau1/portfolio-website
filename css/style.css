@@ -5,7 +5,51 @@ Secondary Color (lightgrey):#bfbfbf;
 */
 * {
   box-sizing: border-box;
+
+header {
+  background color:#ffe5ea
+  font-family:'Spartan', sans-serif;
+  text-align: center;
+  padding: 10px 0;
 }
+#header {
+box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
+position: fixed;
+width: 100%;
+}
+nav {
+  display: inline-block;
+}
+nav {
+  width: 100%
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+  color: #ff7f50;
+}
+nav > ul > li > a:hover, a:focus {
+  color: #cc6540;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+nav > ul > li > a:active {
+  color: #ffffff;
+}
+main {
+  padding-top: 133px;
+}
+
 body{
   background-color:#ffe5ea;/*lightpink*/
   font-family:'Spartan', sans-serif;
@@ -51,12 +95,12 @@ h4{
   text-tranform: underline;
 }
 
-img{
-  width: 100%
+img {
+  max-width: 1200px;
 }
 
 a {
-  color: #f67ele;
+  color: #ff7f50;
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
@@ -103,11 +147,11 @@ a:active { /* selected link */
   transition: 0.2s opacity;
   margin: 0 auto
 }
-.button.connect:hover {
+.button.contact:hover {
   background-color: #bfbfbf
   color: #ffffff;
 }
-.button.connect:active {
+.button.contact:active {
   background-color: #bfbfbf
   color: #ffffff;
 }
@@ -116,13 +160,21 @@ a:active { /* selected link */
 .container {
   padding: 0 15 px
 }
-selector {
-  width: 1200px;
-
-}
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 #work.row {
   margin: 25px; border-bottom:1 px solid #4a4a4a; /* 25px top and botom, 1 px bottom border, 0 left and right */
+}
+.center {
+  text-align: center;
+}
+.logo {
+  max-width: 250px;
+}
+#hero {
+background-color: #ffe5ea;
+padding: 20px 0;
+display: inline-block;
+width: 100%;
 }
