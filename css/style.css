@@ -5,9 +5,10 @@ Secondary Color (lightgrey):#bfbfbf;
 */
 * {
   box-sizing: border-box;
+}
 
 header {
-  background color:#ffe5ea
+  background-color: #;
   font-family:'Spartan', sans-serif;
   text-align: center;
   padding: 10px 0;
@@ -106,7 +107,9 @@ a {
 a:visited { /* visited link */
   color: #ff7f50;
 }
-a:hover,
+a:hover {
+  color: #ffffff;
+}
 a:focus {
   color: #cc6540;
   text-decoration: underline; /* Underlining when hovering over a link */
@@ -145,7 +148,7 @@ a:active { /* selected link */
   border: 2px solid #bfbfbf;
   border-radius: 3px;
   transition: 0.2s opacity;
-  margin: 0 auto
+  margin: 0 auto;
 }
 .button.contact:hover {
   background-color: #bfbfbf
@@ -158,7 +161,7 @@ a:active { /* selected link */
 
 /* Layout styling */
 .container {
-  padding: 0 15 px
+  padding: 0 15 px;
 }
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
