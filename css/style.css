@@ -107,9 +107,7 @@ a {
 a:visited { /* visited link */
   color: #ff7f50;
 }
-a:hover {
-  color: #ffffff;
-}
+a:hover,
 a:focus {
   color: #cc6540;
   text-decoration: underline; /* Underlining when hovering over a link */
@@ -138,7 +136,7 @@ a:active { /* selected link */
   text-decoration: none;
 }
 
-.button.contact{
+.button.contact {
   display: inline-block
   background-color: transparent;
   color: #ffffff;
