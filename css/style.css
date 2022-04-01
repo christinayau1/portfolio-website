@@ -93,15 +93,15 @@ h4{
 
 /*typography*/
 .makeUppercase {
-  text-tranform: uppercase;
+  text-transform: uppercase;
 }
 
 .makeLowercase {
-  text-tranform: lowercase;
+  text-transform: lowercase;
 }
 
 .underlineMe {
-  text-tranform: underline;
+  text-transform: underline;
 }
 
 img {
@@ -168,7 +168,7 @@ a:active { /* selected link */
 
 /* Layout styling */
 .container {
-  padding: 0 15 px;
+  text-align: center;
 }
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
@@ -195,13 +195,14 @@ width: 100%;
 #footer {
   text-align: center;
 }
-.content {
-margin-left: 20%;
-margin-right: 20%;
-text-align: center;
+#basil {
+  text-align: center;
 }
-.picture {
-  width: 350px;
-  height:auto;
-  vertical-align: middle;
+#designprocess {
+  text-align: center;
+}
+.content {
+margin-left: 15%;
+margin-right: 15%;
+text-align: center;
 }
