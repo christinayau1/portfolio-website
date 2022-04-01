@@ -5,7 +5,6 @@
   <meta charset="utf-8">
   <!--Setting the Viewport in HTML-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Christina Yau | UX Designer</title>
   <!--Add Normalize-->
   <link rel="stylesheet" type="text/css"
@@ -17,7 +16,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 
 <body>
-  <header>
+  <div id="header">
     <!--Orange Block-->
     <div class="container">
       <!-- Yellow Block-->
@@ -26,50 +25,50 @@
         <ul class="navigation">
           <li><a href="index.html">Home</a></li>
           <li><a href="basil.html">Basil Payment App</a></li>
-          <li><a href="#WordBoostApplication">WordBoost Vocab App</a></li>
+          <!--<li><a href="#WordBoostApplication">WordBoost Vocab App</a></li>-->
           <li><a href="about.html">About</a></li>
-          <li><a href="#connect">Connect</a></li>
+          <!--<li><a href="#connect">Connect</a></li>-->
         </ul>
       </nav>
     </div>
     <!--Close Yellow Container-->
-  </header>
+  </div>
   <!--Close Orange Block-->
 
 <main>
   <div id="about"><!--Orange Block-->
     <div class="container"><!--Yellow Container-->
-      <h1>About Christina</h1>
+      <h1 class>About Christina</h1>
     </div><!--Close Yellow Container-->
   </div><!--Close Orange Block-->
   <div><!--Orange Block-->
     <div class="container"><!--Yellow Container-->
-      <picture>
-        <source srcset="img/Homepage/Christina_Profile@1x.jpeg" media="(max-width: 767px)">
         <img src="img/Homepage/Christina_Profile@2x.jpeg" alt="Christina Profile Picture">
-      </picture>
       <div class="row"><!--Dark Green-Row for Columns-->
         <div><!--First Column-->
-          <h2>My Story</h2>
-        <p>I am currently based in Minneapolis, Minnesota, USA.
-        </p>
-​        <p>When I was 12 years old, my dad first sat me down with a blank piece of paper and pen and told me to think of any problem I could think of and figure out why it did not work and possible solutions for it. Though I did not know or appreciate it at the time, my dad was the first one who encouraged me to think critically and creatively about the world and how I could contribute my ideas to better others' experiences in the world.
-​        </p>
-        <p>It took a while for me to join the User Experience (UX) Design field though. 
-​        </p>
-        <p>I was a psychology major,  foreign exchange student in China and came back to the U.S. wanting to be a licensed Marriage & Family Therapist (MFT) in China. But sadly, I realized there weren't many MFT opportunities in China after further investigation and came back to the drawing board of figuring out what I wanted to do career-wise.
-        </p>
-        <p>During the pandemic, I took an "Introduction to Design" course on LinkedIn, liked it and looked into how I could do this as a career. Long story short, I heard about UX Design and enrolled in April 2021 at CareerFoundry's User Experience Design program as a full-time student. As a student, I created a payment app called Basil and a vocabulary app called WordBoost. I most enjoyed the user research and user testing component of the design process. 
-​        </p>
-        <p>In my free time, I mentor international students, enjoy exploring the outdoors, and love eating fruits (aka I'm a fruit monster). Feel free to reach out and connect below!
-        </p>
+          <h2 class>My Story</h2>
+        <div class="content"
+          <p>I am currently based in Minneapolis, Minnesota, USA.
+          </p>
+  ​        <p>When I was 12 years old, my dad first sat me down with a blank piece of paper and pen and told me to think of any problem I could think of and figure out why it did not work and possible solutions for it. Though I did not know or appreciate it at the time, my dad was the first one who encouraged me to think critically and creatively about the world and how I could contribute my ideas to better others' experiences in the world.
+  ​        </p>
+          <p>It took a while for me to join the User Experience (UX) Design field though. 
+  ​        </p>
+          <p>I was a psychology major, foreign exchange student in China and came back to the U.S. wanting to be a licensed Marriage & Family Therapist (MFT) in China. But sadly, I realized there weren't many MFT opportunities in China after further investigation and came back to the drawing board of figuring out what I wanted to do career-wise.
+          </p>
+          <p>During the pandemic, I took an "Introduction to Design" course on LinkedIn, liked it and looked into how I could do this as a career. Long story short, I heard about UX Design and enrolled in April 2021 at CareerFoundry's User Experience Design program as a full-time student. As a student, I created a payment app called Basil and a vocabulary app called WordBoost. I most enjoyed the user research and user testing component of the design process. 
+  ​        </p>
+          <p>In my free time, I mentor international students, enjoy exploring the outdoors, and love eating fruits (aka I'm a fruit monster). Feel free to reach out and connect below!
+          </p>
         <a href="files/UX Designer Resume_Christina Yau (public)2.pdf" class="button" target="_blank">View Resume</a>
         <!--button-->
+        </div>
       </div><!--Close First Column-->
       <div><!--Second Column-->
         <h2>Skills & Tools</h2>
           <div><!--Skills Container-->
-            <h3>Skills</h3>
+            <h3 class>Skills</h3>
+            <div class="center">
               <ul>
                 <li><a href="#">Competitive Analysis</a></li>
                 <li><a href="#">User Personas</a></li>
@@ -78,9 +77,11 @@
                 <li><a href="#">A/B Testing</a></li>
                 <li><a href="#">Card Sorting</a></li>
               </ul>
+            </div>
           </div><!--Close Skills Container-->
             <div><!--Tools Container-->
-              <h3>Tools</h3>
+              <h3 class>Tools</h3>
+              <div class="center">
                 <ul>
                   <li><a href="#">Adobe XD</a></li>
                   <li><a href="#">Balsamiq</a></li>
@@ -89,6 +90,7 @@
                   <li><a href="#">Marvel</a></li>
                   <li><a href="#">HTML</a></li>
                 </ul>
+              </div>
               </div><!--Close Tools Container-->
             </div><!--Close Second Column-->
             </div><!--Close Dark Green-Row for Columns-->
@@ -96,7 +98,7 @@
         </div><!--Close Orange Block-->
   </main>
 
-  <footer>
+  <div id="footer">
     <!--Orange Block-->
     <div class="container">
       <!--Yellow Container-->
@@ -135,7 +137,7 @@
         </a>
     </div>
     <!--Close Yellow Container-->
-  </footer>
+  </div><!--close footer-->
   <!--Close Orange Block-->
 </main>
 </body>
