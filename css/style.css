@@ -1,23 +1,26 @@
 /*
 Colors used:
 Primary Color (lightpink):#ffe5ea;
-Secondary Color (lightgrey):#bfbfbf;
+Secondary Color (darkgrey):#5a5a5a;
 */
 * {
   box-sizing: border-box;
 }
 
-header {
-  background-color: #;
+#header {
+  background-color: #ffe5ea;
   font-family:'Spartan', sans-serif;
   text-align: center;
-  padding: 10px 0;
+  width: 100%;
 }
-#header {
-box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
-position: fixed;
-width: 100%;
+
+#about {
+  background-color: #ffe5ea;
+  font-family:'Spartan', sans-serif;
+  text-align: center;
+  width: 100%;
 }
+
 nav {
   display: inline-block;
 }
@@ -47,6 +50,7 @@ nav > ul > li > a:hover, a:focus {
 nav > ul > li > a:active {
   color: #ffffff;
 }
+
 main {
   padding-top: 133px;
 }
@@ -57,7 +61,7 @@ body{
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: #bfbfbf;/*lightgrey*/
+  color: #5a5a5a;/*darkgrey*/
 }
 
 h1, h2, h3, h4 {
@@ -66,16 +70,20 @@ h1, h2, h3, h4 {
 h1{
   font-size: 2.75em;
   font-weight: 700;
+  text-align: center;
 }
 
 h2{
   font-size: 2.25em;
   font-weight: 700;
+  text-align:center;
+  margin-top: 10%;
 }
 
 h3{
   font-size: 1.75em;
   font-weight: 400;
+  text-align: center;
 }
 
 h4{
@@ -97,7 +105,8 @@ h4{
 }
 
 img {
-  max-width: 1200px;
+  max-width: 700px;
+  height: auto;
 }
 
 a {
@@ -125,7 +134,7 @@ a:active { /* selected link */
   border-radius: 3px;
   border-bottom: 2px solid ##bfbfbf;/*width of the border, type, color */
   transition: 0.2s opacity;
-  margin: 0 auto
+  margin: 0 auto;
 }
 .button:hover {
   opacity: 0.8;/* Reduces the opacity of the button to 80% */
@@ -172,10 +181,27 @@ a:active { /* selected link */
 }
 .logo {
   max-width: 250px;
+
 }
 #hero {
 background-color: #ffe5ea;
 padding: 20px 0;
 display: inline-block;
 width: 100%;
+}
+#work {
+  text-align:center;
+}
+#footer {
+  text-align: center;
+}
+.content {
+margin-left: 20%;
+margin-right: 20%;
+text-align: center;
+}
+.picture {
+  width: 350px;
+  height:auto;
+  vertical-align: middle;
 }
