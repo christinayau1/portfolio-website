@@ -132,8 +132,9 @@ a:active { /* selected link */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid ##bfbfbf;/*width of the border, type, color */
-  transition: 0.2s opacity;
+  border-bottom: 2px solid #bfbfbf;/*width of the border, type, color */
+  transition-duration: 0.2s opacity;
+  transition-property: opacity;
   margin: 0 auto;
 }
 .button:hover {
@@ -154,12 +155,14 @@ a:active { /* selected link */
   text-transform: uppercase;
   border: 2px solid #bfbfbf;
   border-radius: 3px;
-  transition: 0.2s opacity;
+  transition-duration: 0.2s opacity;
+  transition-property: opacity;
   margin: 0 auto;
 }
 .button.contact:hover {
-  background-color: #bfbfbf
+  background-color: #bfbfbf;
   color: #ffffff;
+  opacity:0.8;
 }
 .button.contact:active {
   background-color: #bfbfbf
@@ -188,6 +191,13 @@ background-color: #ffe5ea;
 padding: 20px 0;
 display: inline-block;
 width: 100%;
+text-align: center;
+}
+#hero span{ 
+  display: block;
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
 }
 #work {
   text-align:center;
@@ -202,7 +212,88 @@ width: 100%;
   text-align: center;
 }
 .content {
-margin-left: 15%;
-margin-right: 15%;
-text-align: center;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+.column-thirds {
+  float: left;
+  width: 33.33%;
+}
+
+.column-quarter {
+  float: left;
+  width: 25%;
+}
+
+[class*="col-"] {
+  float:left;
+}
+
+/* Clear floats after the columns*/
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: center;
+    padding:20px 0 13px; 
+  }
+  nav {
+    width:auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .logo {
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding: 30px 0 0px;
+  }
+  col-md-6{
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: center;
+    padding: 20px 0 13px; 
+  }
+  .logo {
+    text-align: left;
+    margin-left: 5%;
+    padding: 30px 0 0px;
+  }
+  nav{
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+  .content {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  header {
+    text-align: center;
+  }
+  .logo {
+    text-align: left;
+    margin-left: 5%;
+    padding: 30px 0 0px;
+  }
+  nav{
+    width: auto;
+    float: right;
+  }
 }
