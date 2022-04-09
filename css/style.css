@@ -10,21 +10,22 @@ Secondary Color (darkgrey):#5a5a5a;
 #header {
   background-color: #ffe5ea;
   font-family:'Spartan', sans-serif;
-  text-align: center;
   width: 100%;
+  position: fixed;
 }
 
 #about {
   background-color: #ffe5ea;
   font-family:'Spartan', sans-serif;
-  text-align: center;
   width: 100%;
+}
+
+#basil span {
+  text-align: center;
 }
 
 nav {
   display: inline-block;
-}
-nav {
   width: 100%
 }
 nav > ul {
@@ -55,7 +56,7 @@ main {
   padding-top: 133px;
 }
 
-body{
+body {
   background-color:#ffe5ea;/*lightpink*/
   font-family:'Spartan', sans-serif;
   font-size: 16px;
@@ -71,19 +72,19 @@ h1{
   font-size: 2.75em;
   font-weight: 700;
   text-align: center;
+
 }
 
 h2{
   font-size: 2.25em;
   font-weight: 700;
-  text-align:center;
-  margin-top: 10%;
+  text-align: center;
 }
 
 h3{
   font-size: 1.75em;
   font-weight: 400;
-  text-align: center;
+
 }
 
 h4{
@@ -170,21 +171,11 @@ a:active { /* selected link */
 }
 
 /* Layout styling */
-.container {
-  text-align: center;
-}
 .row {
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 #work.row {
   margin: 25px; border-bottom:1 px solid #4a4a4a; /* 25px top and botom, 1 px bottom border, 0 left and right */
-}
-.center {
-  text-align: center;
-}
-.logo {
-  max-width: 250px;
-
 }
 #hero {
 background-color: #ffe5ea;
@@ -199,101 +190,26 @@ text-align: center;
   margin-right: 20%;
   text-align: center;
 }
-#work {
-  text-align:center;
-}
+
 #footer {
   text-align: center;
 }
-#basil {
-  text-align: center;
-}
-#designprocess {
-  text-align: center;
-}
+
 .content {
 margin-left: 10%;
 margin-right: 10%;
 }
 
-.column-thirds {
-  float: left;
-  width: 33.33%;
-}
-
-.column-quarter {
-  float: left;
-  width: 25%;
-}
-
-[class*="col-"] {
-  float:left;
-}
-
-/* Clear floats after the columns*/
-.row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
 @media only screen and (min-width: 640px) {
-  header {
-    text-align: center;
-    padding:20px 0 13px; 
+  header { 
+    text-align: unset;
   }
-  nav {
-    width:auto;
-    float: right;
-    margin-top: 4px;
-  }
-  .logo {
-    text-align: left;
-    margin-left: 5%;
-    margin-top: 5%;
-    padding: 30px 0 0px;
-  }
-  col-md-6{
-    width: 50%;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  header {
-    text-align: center;
-    padding: 20px 0 13px; 
-  }
-  .logo {
-    text-align: left;
-    margin-left: 5%;
-    padding: 30px 0 0px;
-  }
-  nav{
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-  .content {
-    margin-left: 25%;
-    margin-right: 25%;
-  }
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media only screen and (min-width: 1440px) {
-  header {
-    text-align: center;
-  }
-  .logo {
-    text-align: left;
-    margin-left: 5%;
-    padding: 30px 0 0px;
-  }
-  nav{
+  nav { 
     width: auto;
     float: right;
   }
 }
+
+@media only screen and (min-width: 1024px)
+  
+@media only screen and (min-width: 1440px)
