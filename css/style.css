@@ -153,7 +153,7 @@ a:active { /* selected link */
 .button.contact {
   display: inline-block
   background-color: transparent;
-  color #ffffff;
+  color: #ffffff;
   font-weight: 400;
   padding: 10px;
   text-transform: uppercase;
@@ -295,7 +295,7 @@ row::after {
   clear: both;
   display: table;
 }
-.VirtualOnboardingWebsite {
+.berlin {
   width: 100%;
   max-width: 100%;
   height: auto;
@@ -376,7 +376,7 @@ row::after {
     width: 40%;
   }
   .col-lg-6 {
-    width: 50%
+    width: 50%;
   }
   .col-lg-7 {
     width: 60%;
