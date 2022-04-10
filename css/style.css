@@ -11,6 +11,7 @@ Secondary Color (darkgrey):#5a5a5a;
   background-color: #ffe5ea;
   font-family:'Spartan', sans-serif;
   width: 100%;
+  padding: 10px;
   position: fixed;
 }
 
@@ -79,6 +80,7 @@ h2{
   font-size: 2.25em;
   font-weight: 700;
   text-align: center;
+  padding-top: 50px;
 }
 
 h3{
@@ -136,6 +138,7 @@ a:active { /* selected link */
   border-bottom: 2px solid #bfbfbf;/*width of the border, type, color */
   transition-duration: 0.2s opacity;
   transition-property: opacity;
+  margin-top: 15px;
   margin: 0 auto;
 }
 .button:hover {
@@ -150,7 +153,7 @@ a:active { /* selected link */
 .button.contact {
   display: inline-block
   background-color: transparent;
-  color: #ffffff;
+  color #ffffff;
   font-weight: 400;
   padding: 10px;
   text-transform: uppercase;
@@ -167,7 +170,10 @@ a:active { /* selected link */
 }
 .button.contact:active {
   background-color: #bfbfbf
-  color: #ffffff;
+  color #ffffff;
+}
+#basil {
+  text-align: center;
 }
 
 /* Layout styling */
@@ -191,6 +197,10 @@ text-align: center;
   text-align: center;
 }
 
+#hero p {
+  margin-left: 10%;
+  margin-right: 10%;
+}
 #footer {
   text-align: center;
 }
@@ -198,6 +208,132 @@ text-align: center;
 .content {
 margin-left: 10%;
 margin-right: 10%;
+text-align: left;
+}
+
+[class*="col"] {
+  float: left;
+  padding: 20px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.center {
+ display: flex;
+ justify-content: center;
+}
+.basil1 { 
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.basil2 { 
+  float: center;
+  width: 33.33%;
+  padding: 5px;
+}
+row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.basil3 { 
+  float: right;
+  width: 33.33%;
+  padding: 5px;
+}
+row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.logo1 { 
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.logo2 { 
+  float: center;
+  width: 25%;
+  padding: 5px;
+}
+row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.logo3 { 
+  float: center;
+  width: 25%;
+  padding: 5px;
+}
+row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.logo4 { 
+  float: right;
+  width: 25%;
+  padding: 5px;
+}
+row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.VirtualOnboardingWebsite {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill:#fcffad;}
+  100% {fill: #f76414;}
+}
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  0% {transform: translate(0,50px);}
+  50% {transform: translate(100px,50px);}
+  100% {transform: translate(200px,50px);}
+}
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  0% {transform: translate(446px, 48px);}
+  50% {transform: translate(173px, 48px);}
+  100% {transform: translate(100px, 48px);}
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 @media only screen and (min-width: 640px) {
@@ -208,8 +344,51 @@ margin-right: 10%;
     width: auto;
     float: right;
   }
+  .col-md-2 {
+    width: 10%;
+  }
+  .col-md-4 {
+    width: 30%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-8 {
+    width: 70%;
+  }
+  #about-page h3 {
+    margin-top: 0;
+    }
 }
 
-@media only screen and (min-width: 1024px)
-  
-@media only screen and (min-width: 1440px)
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+  }
+  nav { 
+    width: auto;
+    float: right;
+  }
+  .col-lg-3 {
+    width: 20%;
+  }
+  .col-lg-5 {
+    width: 40%;
+  }
+  .col-lg-6 {
+    width: 50%
+  }
+  .col-lg-7 {
+    width: 60%;
+  }
+  .col-lg-9 {
+    width: 80%;
+  }
+  #about-page h3 {
+  margin-top: 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
