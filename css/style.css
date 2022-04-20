@@ -10,8 +10,8 @@ Secondary Color (darkgrey):#5a5a5a;
 #header {
   background-color: #ffe5ea;
   font-family:'Spartan', sans-serif;
-  width: 100%;
-  padding: 10px;
+  max-width: 150px;
+  padding: 10px; /*adjust after hamburger icon is added*/
   position: fixed;
 }
 
@@ -25,16 +25,10 @@ Secondary Color (darkgrey):#5a5a5a;
   text-align: center;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 nav > ul > li > a {
   padding: 0 15px;
@@ -52,9 +46,25 @@ nav > ul > li > a:hover, a:focus {
 nav > ul > li > a:active {
   color: #ffffff;
 }
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+.navtoggle.responsive {
+  position: relative;
+}
+.navtoggle.responsive li {
+  display: block;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
 
 main {
-  padding-top: 133px;
+  padding-top: 61.59;
 }
 
 body {
@@ -117,7 +127,7 @@ h5 {
 }
 
 img {
-  max-width: 700px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -348,13 +358,19 @@ row::after {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header { 
     text-align: unset;
   }
   nav { 
     width: auto;
     float: right;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
+  nav > ul > li {
+    display: inline-block;
   }
   .col-md-2 {
     width: 10%;
@@ -376,7 +392,20 @@ row::after {
   }
   #about-page h3 {
     margin-top: 0;
-    }
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
+  #header {
+    background-color: #ffe5ea;
+    font-family:'Spartan', sans-serif;
+    max-width: 100%;
+    padding: 10px;
+    position: fixed;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -410,3 +439,17 @@ row::after {
     margin-left: auto;
     margin-right: auto;
   }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+  .navtoggle li:last-child {
+    display: none;
+  }
+  #header {
+    background-color: #ffe5ea;
+    font-family:'Spartan', sans-serif;
+    max-width: 100%;
+    padding: 10px;
+    position: fixed;
+  }
+}
