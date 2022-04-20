@@ -10,8 +10,8 @@ Secondary Color (darkgrey):#5a5a5a;
 #header {
   background-color: #ffe5ea;
   font-family:'Spartan', sans-serif;
-  max-width: 150px;
-  padding: 10px; /*adjust after hamburger icon is added*/
+  max-width: 100%;
+  padding: 10px 0 4px; /*adjust after hamburger icon is added*/
   position: fixed;
 }
 
@@ -24,7 +24,9 @@ Secondary Color (darkgrey):#5a5a5a;
 #basil span {
   text-align: center;
 }
-
+li {
+  text-align: -webkit-match-parent;
+}
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -49,7 +51,7 @@ nav > ul > li > a:active {
 .navtoggle li:not(:last-child) {
   display: none;
 }
-.navtoggle.responsive {
+.navtoggle, .navtoggle.responsive {
   position: relative;
 }
 .navtoggle.responsive li {
@@ -64,7 +66,7 @@ nav > ul > li > a:active {
 }
 
 main {
-  padding-top: 61.59;
+  padding-top: 61.59px;
 }
 
 body {
@@ -415,6 +417,12 @@ row::after {
   nav { 
     width: auto;
     float: right;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
+  nav > ul > li {
+    display: inline-block;
   }
   .col-lg-3 {
     width: 20%;
