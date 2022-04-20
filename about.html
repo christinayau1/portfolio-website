@@ -14,24 +14,29 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://kit.fontawesome.com/8291cf8480.js" crossorigin="anonymous"></script>
+</head>
 
 <body>
-  <body>
-  <div id= "header">
+  <div id="header">
     <!--Orange Block-->
     <div class="container">
       <!-- Yellow Block-->
-      <a href="index.html">Christina Yau</a>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">Christina Yau</a>
         <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="basil.html">Basil Payment App</a></li>
-          <!--<li><a href="#WordBoostApplication">WordBoost Vocab App</a></li>-->
-          <li><a href="about.html">About</a></li>
-         <!--<li><a href="#connect">Connect</a></li>-->
-        </ul>
-      </nav>
+          <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="basil.html">Basil App</a></li>
+            <!--<li><a href="#WordBoostApplication">WordBoost Vocab App</a></li>-->
+            <li><a href="about.html">About</a></li>
+           <!--<li><a href="#connect">Connect</a></li>-->
+           <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+            <i class="fa-solid fa-bars"></i></a></li>
+          </ul>
+        </nav>
       </div>
+    </div>
   </div>
 
 <main>
@@ -139,6 +144,10 @@
   </div><!--Close Footer-->
   <!--Close Orange Block-->
 </main>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>
 
