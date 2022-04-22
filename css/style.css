@@ -10,7 +10,7 @@ Secondary Color (darkgrey):#5a5a5a;
 #header {
   background-color: #ffe5ea;
   font-family: 'Spartan', sans-serif;
-  max-width: 100%;
+  width: 100%;
   padding: 10px 0 4px;/* adjust after hamburger icon is added */
   position: fixed;
 }
