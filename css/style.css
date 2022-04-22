@@ -9,54 +9,64 @@ Secondary Color (darkgrey):#5a5a5a;
 
 #header {
   background-color: #ffe5ea;
-  font-family:'Spartan', sans-serif;
+  font-family: 'Spartan', sans-serif;
   max-width: 100%;
-  padding: 10px 0 4px; /*adjust after hamburger icon is added*/
+  padding: 10px 0 4px;/* adjust after hamburger icon is added */
   position: fixed;
 }
 
 #about {
   background-color: #ffe5ea;
-  font-family:'Spartan', sans-serif;
+  font-family: 'Spartan', sans-serif;
   width: 100%;
 }
 
 #basil span {
   text-align: center;
 }
+
 li {
   text-align: -webkit-match-parent;
 }
+
 nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
+
 nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
+
 nav > ul > li > a:visited {
-  color: #ff7f50;
+  color: #ffa27f;
 }
-nav > ul > li > a:hover, a:focus {
-  color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+
+nav > ul > li > a:hover,a:focus {
+  color: #e4ad99;
+  text-decoration: underline;/* Underlining when hovering over a link */
 }
+
 nav > ul > li > a:active {
   color: #ffffff;
 }
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
+
 .navtoggle.responsive li {
   display: block;
 }
+
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -70,40 +80,43 @@ main {
 }
 
 body {
-  background-color:#ffe5ea;/*lightpink*/
-  font-family:'Spartan', sans-serif;
+  background-color: #ffe5ea;/* lightpink */
+  font-family: 'Spartan', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: #5a5a5a;/*darkgrey*/
+  color: #5a5a5a;/* darkgrey */
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   line-height: 1.4;
 }
-h1{
+
+h1 {
   font-size: 2.75em;
   font-weight: 700;
   text-align: center;
   margin-top: 20%;
   margin-bottom: 5%;
-
 }
 
-h2{
+h2 {
   font-size: 2.25em;
   font-weight: 700;
   text-align: center;
   padding-top: 50px;
 }
 
-h3{
+h3 {
   font-size: 1.75em;
   font-weight: 400;
-
 }
 
-h4{
+h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
@@ -115,7 +128,6 @@ h5 {
   padding-top: 50px;
 }
 
-/*typography*/
 .makeUppercase {
   text-transform: uppercase;
 }
@@ -135,44 +147,50 @@ img {
 
 a {
   color: #ff7f50;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;/* No underlining */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #ff7f50;
 }
+
 a:hover,
 a:focus {
   color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;/* Underlining when hovering over a link */
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #ffffff;
 }
 
 .button {
   display: inline-block;
   background-color: #bfbfbf;
-  color: #ffffff;/* need to override default link color*/
+  color: #ffffff;/* need to override default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #bfbfbf;/*width of the border, type, color */
+  border-bottom: 2px solid #bfbfbf;/* width of the border, type, color */
   transition-duration: 0.2s opacity;
   transition-property: opacity;
   margin-top: 15px;
-  margin: 0 auto;
 }
+
 .button:hover {
   opacity: 0.8;/* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
+
 .button:active {
   opacity: 0.8;
   text-decoration: none;
 }
 
 .button.contact {
-  display: inline-block
+  display: inline-block;
   background-color: transparent;
   color: #ffffff;
   font-weight: 400;
@@ -184,14 +202,15 @@ a:active { /* selected link */
   transition-property: opacity;
   margin: 0 auto;
 }
+
 .button.contact:hover {
   background-color: #bfbfbf;
   color: #ffffff;
-  opacity:0.8;
+  opacity: 0.8;
 }
+
 .button.contact:active {
-  background-color: #bfbfbf
-  color #ffffff;
+  background-color: #bfbfbf color #ffffff;
 }
 
 #basil.span {
@@ -200,19 +219,23 @@ a:active { /* selected link */
 
 /* Layout styling */
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;/* 25px top and bottom, 0 left and right */
 }
+
 #work.row {
-  margin: 25px; border-bottom:1 px solid #4a4a4a; /* 25px top and botom, 1 px bottom border, 0 left and right */
+  margin: 25px;
+  border-bottom: 1 px solid #4a4a4a;/* 25px top and botom, 1 px bottom border, 0 left and right */
 }
+
 #hero {
-background-color: #ffe5ea;
-padding: 20px 0;
-display: inline-block;
-width: 100%;
-text-align: center;
+  background-color: #ffe5ea;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
 }
-#hero span{ 
+
+#hero span {
   display: block;
   margin-left: 20%;
   margin-right: 20%;
@@ -230,9 +253,9 @@ text-align: center;
 }
 
 .content {
-margin-left: 10%;
-margin-right: 10%;
-text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: left;
 }
 
 [class*="col"] {
@@ -245,80 +268,96 @@ text-align: left;
   clear: both;
   display: table;
 }
+
 .center {
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-.basil1 { 
+
+.basil1 {
   float: left;
   width: 33.33%;
   padding: 5px;
 }
-row::after {
+
+.row::after {
   content: "";
   clear: both;
   display: table;
 }
-.basil2 { 
+
+.basil2 {
   float: center;
   width: 33.33%;
   padding: 5px;
 }
-row::after {
+
+.row::after {
   content: "";
   clear: both;
   display: table;
 }
-.basil3 { 
+
+.basil3 {
   float: right;
   width: 33.33%;
   padding: 5px;
 }
-row::after {
+
+.row::after {
   content: "";
   clear: both;
   display: table;
 }
-.logo1 { 
+
+.logo1 {
   float: left;
   width: 25%;
   padding: 5px;
 }
-row::after {
+
+.row::after {
   content: "";
   clear: both;
   display: table;
 }
-.logo2 { 
+
+.logo2 {
   float: center;
   width: 25%;
   padding: 5px;
 }
-row::after {
+
+.row::after {
   content: "";
   clear: both;
   display: table;
 }
-.logo3 { 
+
+.logo3 {
   float: center;
   width: 25%;
   padding: 5px;
 }
-row::after {
+
+.row::after {
   content: "";
   clear: both;
   display: table;
 }
-.logo4 { 
+
+.logo4 {
   float: right;
   width: 25%;
   padding: 5px;
 }
-row::after {
+
+.row::after {
   content: "";
   clear: both;
   display: table;
 }
+
 .berlin {
   width: 100%;
   max-width: 100%;
@@ -326,10 +365,19 @@ row::after {
 }
 
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill:#fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
+
 .sun {
   animation-duration: 4s;
   animation-name: color-change;
@@ -339,10 +387,19 @@ row::after {
 }
 
 @keyframes cloud-move {
-  0% {transform: translate(0,50px);}
-  50% {transform: translate(100px,50px);}
-  100% {transform: translate(200px,50px);}
+  0% {
+    transform: translate(0, 50px);
+  }
+
+  50% {
+    transform: translate(100px, 50px);
+  }
+
+  100% {
+    transform: translate(200px, 50px);
+  }
 }
+
 .cloud-front {
   animation-duration: 30s;
   animation-name: cloud-move;
@@ -352,58 +409,80 @@ row::after {
 }
 
 @keyframes cloud-move-reverse {
-  0% {transform: translate(446px, 48px);}
-  50% {transform: translate(173px, 48px);}
-  100% {transform: translate(100px, 48px);}
+  0% {
+    transform: translate(446px, 48px);
+  }
+
+  50% {
+    transform: translate(173px, 48px);
+  }
+
+  100% {
+    transform: translate(100px, 48px);
+  }
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 @media only screen and (min-width: 641px) {
-  header { 
+  header {
     text-align: unset;
   }
-  nav { 
+
+  nav {
     width: auto;
     float: right;
   }
+
   nav > ul {
     margin: 1em 0;
   }
+
   nav > ul > li {
     display: inline-block;
   }
+
   .col-md-2 {
     width: 10%;
   }
+
   .col-md-4 {
     width: 30%;
   }
+
   .col-md-5 {
     width: 40%;
   }
+
   .col-md-6 {
     width: 50%;
   }
+
   .col-md-7 {
     width: 60%;
   }
+
   .col-md-8 {
     width: 70%;
   }
+
   #about-page h3 {
     margin-top: 0;
   }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
   .navtoggle li:last-child {
     display: none;
   }
+
   #header {
     background-color: #ffe5ea;
-    font-family:'Spartan', sans-serif;
+    font-family: 'Spartan', sans-serif;
     max-width: 100%;
     padding: 10px;
     position: fixed;
@@ -414,48 +493,61 @@ row::after {
   header {
     text-align: unset;
   }
-  nav { 
+
+  nav {
     width: auto;
     float: right;
   }
+
   nav > ul {
     margin: 1em 0;
   }
+
   nav > ul > li {
     display: inline-block;
   }
+
   .col-lg-3 {
     width: 20%;
   }
+
   .col-lg-5 {
     width: 40%;
   }
+
   .col-lg-6 {
     width: 50%;
   }
+
   .col-lg-7 {
     width: 60%;
   }
+
   .col-lg-9 {
     width: 80%;
   }
+
   #about-page h3 {
-  margin-top: 0;
+    margin-top: 0;
   }
+
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
   .navtoggle li:last-child {
     display: none;
   }
+
   #header {
     background-color: #ffe5ea;
-    font-family:'Spartan', sans-serif;
+    font-family: 'Spartan', sans-serif;
     max-width: 100%;
     padding: 10px;
     position: fixed;
